@@ -7,44 +7,15 @@
     <title>Khan acadamy</title>
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href=".files/bootstrap.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- <div class="outter_wrap">
-
-        <div class="top_div">
-
-            <div class="left_div">
-
-                <button class="course_button">
-                    <span class="course_span">Courses</span>
-                    <img src="svg/down blue.jpeg" alt="" id="down_arrow">
-                </button>
-                <div class="search_div">
-                    <a href="" class="search_a">
-                        <span id="search_span">Search</span>
-                        <img src="ssvvvvg/monocle.jpg" alt="">
-                    </a>
-                </div>
-            </div>
-            <img src="svg/gpt.jpeg" alt="" id="logo">
-            <div class="right_div">
-                <span id="guid_span">Get AI Guide</span>
-                <span id="donate_span">Donate
-                    <img src="svg/link blue.jpeg" alt="">
-                </span>
-                <span id="login_span">Log in</span>
-                <span id="signup_span">Sign up</span>
-
-
-            </div>
-
-        </div> -->
     <header>
 
-        <nav>
+        <!-- <nav>
             <ul>
 
                 <li><a href="#">Courses</a></li>
@@ -56,6 +27,52 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+        </nav> -->
+
+
+
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary  ">
+            <div class="container-fluid ">
+                <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+                <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto gap-5">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+
+                    <a class="navbar-brand" href="#">
+                        <img src="svg/logo.jpeg" alt="Logo" height="24" class="d-inline-block align-text-top">
+
+                    </a>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+
+
+                <!-- </div> -->
         </nav>
 
     </header>
@@ -77,21 +94,21 @@
                 </p>
             </section>
             <nav id="buttons_nav">
-                <button id="button_learners">Learners</button>
-                <button id="button_teacher">Teacher</button>
-                <button id="button_parents">Parents</button>
+                <button style="border: 0;" id="button_learners">Learners</button>
+                <button style="border: 0;" id="button_teacher">Teacher</button>
+                <button style="border: 0;" id="button_parents">Parents</button>
             </nav>
         </div>
     </div>
 
 
 
-    <div id="div_subjects">
+    <div class="div_subjects mx-4" style="color: white;">
 
-        <div id="div_left">
-            <li><img src="images/math.png" alt="" style="border-radius: 50%; height:45px;"><a href="#"
-                    style="font-weight: 400;">Math (NCERT)</a>
-                <ul class="sub-menu ">
+        <div id="div_left" class="pt-5">
+            <li type="text"><img class="pe-2" src="images/math.png" alt="" style="border-radius: 50%; height:45px;"><a
+                    href="#" style="font-weight: 400;">Math (NCERT)</a>
+                <ul class="sub-menu " style="border-bottom: solid 1px grey ;padding-bottom: 2rem; ">
                     <li><a href="#">Class 1</a></li>
                     <li><a href="#">Class 7</a></li>
                     <li><a href="#">Class 2</a></li>
@@ -109,9 +126,10 @@
             </li>
 
 
-            <li><img src="images/math.png" alt="" style="border-radius: 50%; height:45px;"><a href="#">Math
+            <li class=""><img class="pe-2" src="images/math.png" alt="" style="border-radius: 50%; height:45px;"><a
+                    href="#">Math
                     foundations</a>
-                <ul class="sub-menu">
+                <ul class="sub-menu " style="border-bottom: solid 1px grey ;padding-bottom: 2rem; ">
                     <li><a href="#">Class 6</a></li>
                     <li><a href="#">Class 9</a></li>
                     <li><a href="#">Class 7</a></li>
@@ -123,8 +141,9 @@
             </li>
 
 
-            <li><img src="images/" alt="" style="border-radius: 50%; height:45px;"><a href="#">Science(NCERT)</a>
-                <ul class="sub-menu">
+            <li style=""><img class="pe-2" src="images/" alt="" style="border-radius: 50%; height:45px;"><a
+                    href="#">Science(NCERT)</a>
+                <ul class="sub-menu" style="border-bottom: solid 1px grey ;padding-bottom: 2rem; ">
                     <li><a href="#">Class 1</a></li>
                     <li><a href="#">Class 9</a></li>
                     <li><a href="#">Class 11</a></li>
@@ -134,26 +153,56 @@
             </li>
 
         </div>
-        <div id="div_right">
-            <li><img src="images/science.png" alt="" style="border-radius: 50%; height:45px;"><a href="#">Science essentials</a>
-                <ul class="sub-menu">
-                    <li><a href="#">Physics</a></li>
-                    <li><a href="#">Biology</a></li>
-                    <li><a href="#">science</a></li>
+        <div id="div_right" class="pt-5">
+            <li><img class="pe-2" src="images/science.png" alt=""
+                    style="text-decoration: none; border-radius: 50%; height:45px;"><a href="#">Science
+                    essentials</a>
+                <ul class="sub-menu" style="border-bottom: solid 1px grey ;padding-bottom: 2rem; padding-top: 1rem; ">
+                    <li style="padding-left: 2rem;"><a href="#">Physics</a></li>
+                    <li style="padding-left: 2rem;"><a href="#">Biology</a></li>
+                    <li style="padding-left: 2rem;"><a href="#">science</a></li>
 
                 </ul>
             </li>
+
+
+            <li class=""><img class="pe-2" src="images/math.png" alt="" style="border-radius: 50%; height:45px;"><a
+                    href="#">Math
+                    foundations</a>
+                <ul class="sub-menu " style="border-bottom: solid 1px grey ;padding-bottom: 2rem; ">
+                    <li style="padding-left: 2rem;" class="col-6"><a href="#">Punjab</a></li>
+                    <li style="padding-left: 2rem;" class="col-6"><a href="#">Assam</a></li>
+                    <li style="padding-left: 2rem;" class="col-6"><a href="#">Uttar Pradesh</a></li>
+                    <li style="padding-left: 2rem;" class="col-6"><a href="#">NCERT(Hinglish)</a></li>
+                    <li style="padding-left: 2rem;" class="col-6"><a href="#">Maharashtra</a></li>
+
+
+                </ul>
+            </li>
+
+
+            <li style=""><img class="pe-2" src="svg/khan4educators.png-f6e5e9-128c.png" alt=""
+                    style="border-radius: 50%; height:45px;"><a href="#">Khan for Educators</a>
+                <ul class="sub-menu row"style="padding-top: 2rem;">
+                    <li style="padding-left: 2rem;" class="col-6"><a href="#">Khan for Educators <br>(Teachers)</a></li>
+                    <li style="padding-left: 2rem;" class="col-6"><a href="#">Khan for Educators <br>(Mentors)</a></li>
+
+                </ul>
+            </li>
+
         </div>
 
-
+       
     </div>
+
+
     <div id="div_main_one">
 
-        <h1 id="heading_three">
+        <h1 id="heading_three" class="">
             Why Khan Academy works
         </h1>
-        <div id="div_three">
-            <div class="three_one">
+        <div id="div_three" class="container- row">
+            <div class="three_one col-4">
                 <!-- <div id="div1_1_why_one"> -->
                 <img src="images/div1.png" alt="" id="img1_one">
 
@@ -164,7 +213,7 @@
                 </div>
                 <!-- </div> -->
             </div>
-            <div class="three_one">
+            <div class="three_one col-4">
                 <!-- <div id="div1_1_why_one"> -->
                 <img src="images/div2.png" alt="" id="img1_one">
 
@@ -177,7 +226,7 @@
                 <!-- </div> -->
             </div>
 
-            <div class="three_one">
+            <div class="three_one col-4">
                 <!-- <div id="div1_1_why_one"> -->
                 <img src="images/div3.png" alt="" id="img1_one">
 
@@ -225,8 +274,9 @@
         </article>
 
 
-        <div id="div_main_two">
-            <article id="article_three">
+
+        <article class="article_three ">
+            <div  id="div_main_two" >
 
                 <span id="span_a3">“When I was a child, I used to fear mathematics. But now, I am in love with
                     mathematics because of Khan Academy.”</span>
@@ -234,24 +284,21 @@
 
 
                 <div id="div_a3">
-
-
                     <div id="div_a3_name">
                         <span id="span_a3_name">ANJALI</span>
-                        <span id="span_a3_place">Gurugram, Haryana</span>
+                        <span id="span_a3_place">Gurugram,Haryana</span>
                     </div>
 
 
                     <div id="div_a3_img">
                         <img src="images/img_a4.png" alt="" id="img_a3">
                     </div>
-
-
-
                 </div>
 
-            </article>
-        </div>
+            </div>
+
+        </article>
+
 
 
 
@@ -282,7 +329,7 @@
 
         <article id="article_five">
             <div id="button_bg">
-                <div id="div_a5">
+                <div class="row gap-2" id="div_a5 ">
                     <button class="button_a5">Learners</button>
                     <button class="button_a5">Teachers</button>
                     <button class="button_a5">Parents</button>
@@ -298,7 +345,7 @@
 
         <article id="article_six">
             <h2 id="h2_support">Key supporters</h2>
-            <div id="div_support">
+            <div id="div_support" >
                 <img src="images/support/s1.png" alt="" class="s_img">
                 <img src="images/support/s2.png" alt="" class="s_img">
                 <img src="images/support/s3.png" alt="" class="s_img">
